@@ -1,0 +1,13 @@
+Importing React and ReactDOM: We import React and ReactDOM from the provided CDN links. These are necessary for creating and rendering React components.
+Root Element: We have a <div> element with the id root. This is where our React component will be rendered.
+TodoList Component:
+We define a functional component TodoList using the function keyword. This component represents the todo list application.
+Inside the TodoList component, we use the useState hook to manage state. We have two state variables: todos to store the list of todo items, and newTodo to store the text of the new todo item being added.
+The addTodo function is responsible for adding a new todo item to the list. It checks if the newTodo is not empty before adding it to the todos array.
+The toggleTodo function toggles the completion status of a todo item when its checkbox is clicked.
+The removeTodo function removes a todo item from the list when its delete button is clicked.
+Inside the JSX, we render an input field for adding new todo items, a button to add the todo, and an unordered list (<ul>) to display the todo items.
+We use the map function to iterate over the todos array and render a list item (<li>) for each todo item. Each list item contains a checkbox to mark the todo item as completed, the todo text, and a delete button to remove the todo item.
+We use the defaultChecked attribute to set the initial checked state of the checkbox, and the onChange event to handle toggling the completion status of the todo item.
+The todo text is displayed with a line-through style if the todo item is completed, indicating that it's done.
+Rendering the TodoList Component: We use ReactDOM.render to render the TodoList component into the root div.
